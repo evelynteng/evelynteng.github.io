@@ -78,7 +78,7 @@ a.button:hover {
 a.aboutbutton {
   padding: 8px 16px;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
   width: fit-content;
   display: flex;
   gap: 5px;
