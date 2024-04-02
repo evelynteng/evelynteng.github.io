@@ -47,6 +47,11 @@ body {
   font-weight: 500;
 }
 
+.date-text{
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .project-card-text {
   overflow: hidden;
   text-overflow: ellipsis;
