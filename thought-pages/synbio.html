@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="./assets/icons/creative-thinking-icon.png" />
+		<title>Evelyn Teng's Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Evelyn Teng's Page</span>
+        
+        <a class="button" href="mailto:evelynqyteng@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">AlphaFold: Synthetic Biology and AI-Powered Protein Folding</div>
+        
+        <div class="body-text">Learning to use the Nobel prize-winning software that helped to revolutionise the way
+            scientists model proteins.
+        </div>
+
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Why Alphafold?</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <div class="body-text">The 2024 chemistry Nobel was awarded to John Jumper and Demis Hassabis at Google DeepMind 
+            for the development of a game-changing AI tool. This AI tool, called AlphaFold, was able to predict protein structures. 
+            Not only has AlphaFold helped reveal millions of intricate 3D protein structures, it has also helped scientists 
+            understand how life's molecules interact, and is also completely free to start off with. I had a great time using 
+            the software to model proteins, such as their template Protein-RNA-Ion: PDB 8AW3, but also haemoglobin and antibodies 
+            (the genetic code for which I found on online datasets like Genbank). It’s fascinating to finally be able to see not 
+            just the 2D representation of a structure, but the actual 3D make-up of proteins!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+
+            <div class="gallery-image-container half-width">
+                <img src="../assets/images/synbio/hemoglobin.png" class="gallery-image">
+            </div>
+
+            <div class="gallery-image-container half-width">
+                <img src="../assets/images/synbio/dnasequence.png" class="gallery-image">
+            </div>
+        
+
+        </div>
+        
+        <div id="project-details">
+            <div class="project-details-content">
+              <div class="body-text">
+                <div class="body-text">We can see that the confidence level of this is quite high, and from 
+                what we know about haemoglobin and its shape, this algorithm has generated a pretty solid and accurate 3D visualisation 
+                of the protein itself. According to an article, how it works is that Alphafold takes the amino acid sequence at the simplest 
+                level and predicts the positions and bond angles of molecules in 3D space. What surprised me was that Alphafold 
+                actually uses unsupervised learning in a way similar to GPT-3. GPT-3 learns the general features of a language 
+                by using unlabelled text data in a similar way to how Alphafold learns embedding from the sequence of proteins 
+                with similar functions.
+            </div>
+
+            <div class="project-details-content">
+                <div class="body-text">
+                    <div class="body-text">Forbes has credited Alphafold as "The Most Important Achievement in AI"
+                    and for good reason. The protein folding problem has stood as a grand challenge in the field of biology for half 
+                    a century. To determine a protein’s three-dimensional shape based solely on the one-dimensional string of molecules 
+                    that comprise it has been “one of the most important yet unsolved issues of modern science". Sure, it can theoretically 
+                    be done by hand, but the number of different configurations that a protein might fold into is astronomical. 
+                    According to Levinthal’s paradox, any given protein can theoretically adopt about 10^300 different configurations. Each 
+                    configuration could generate a different shape that would serve a different function within the body. 
+              </div>
+
+              <div class="project-details-content">
+                <div class="body-text"><div class="body-text">To give an idea of just how influential AlphaFold has been, we knew the 3D 
+                    structures for only about 17% of the roughly 20,000 proteins in the human body before the invention of AlphaFold. 
+                    Those protein structures that we did know had been painstakingly worked out by hand in a laboratory over several decades through 
+                    tedious experiments involving the likes Of X-ray crystallography and nuclear magnetic resonance, all of which require 
+                    multi-million-dollar equipment, and months or even years of brute-forced trial and error. With AlphaFold, we now have 3D
+                     structures for virtually all (98.5%) of the human proteome. According to a Forbes article, of these, 36% are predicted 
+                     with very high accuracy and another 22% are predicted with high accuracy. With the knowledge of the shape of each protein, 
+                     scientists are now able to 
+                     see how different molecules interact with each other, which is gamechanging for fields like medicine and bioengineering!
+              </div>
+            
+              <p>To find out more, here are the links I was looking at to learn more about this super cool technology!</p>
+              <a href="https://www.forbes.com/sites/robtoews/2021/10/03/alphafold-is-the-most-important-achievement-in-ai-ever">This Forbes article</a>
+              <a href="https://towardsai.net/p/l/predicting-3d-structure-of-the-hemoglobin-protein-with-alphafold-2">Another online article</a>
+              <a href="https://magazine.hms.harvard.edu/articles/did-ai-solve-protein-folding-problem">This article in the Harvard Medicine Magazine</a>
+      </div>
+    </div>
+
+	</body>
+</html>
