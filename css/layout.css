@@ -65,6 +65,7 @@ body {
 #about-section {
   display: flex;
   flex-direction: column;
+  background-color: bisque;
   gap: 16px;
 }
 
