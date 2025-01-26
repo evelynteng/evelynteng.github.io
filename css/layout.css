@@ -218,25 +218,3 @@ body {
     max-width: 100%;
   }
 }
-
-footer {
-  background-color: #f1f1f1;
-  padding: 1.5rem 0;
-  text-align: center;
-  border-top: 1px solid #ccc;
-}
-
-.social-buttons .button {
-  text-decoration: none;
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  line-height: 30px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
