@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-title {
@@ -12,13 +12,8 @@ body {
   font-size: 20px
 }
 
-.button-text-aboutme {
-  font-size: 40px;
-  font-weight: 700;
-}
-
 .button-text {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 
