@@ -114,8 +114,6 @@ body {
     }
 
 
-
-
 /* Project Pages */
 
 #project-header {
@@ -127,6 +125,7 @@ body {
 .project-header-image {
   width: 100%;
   height: auto;
+  border-radius: 75%
 }
 
 #project-details {
