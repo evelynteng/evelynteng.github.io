@@ -48,6 +48,7 @@ body {
 .portfolio-header-image {
   width: 80%;
   height: auto;
+  border-radius: 75%
 }
 
 #portfolio-header-text-container {
@@ -125,7 +126,6 @@ body {
 .project-header-image {
   width: 100%;
   height: auto;
-  border-radius: 75%
 }
 
 #project-details {
