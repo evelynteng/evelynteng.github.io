@@ -22,123 +22,11 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
     <script defer src="./js/script.js"></script>
 
-    <script defer>
-      document.addEventListener("DOMContentLoaded", () => {
-        const canvas = document.createElement("canvas");
-        canvas.id = "background-canvas";
-        document.body.appendChild(canvas);
-
-        const ctx = canvas.getContext("2d");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let particles = [];
-        const count = 100;
-
-        for (let i = 0; i < count; i++) {
-          particles.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            vx: (Math.random() - 0.5) * 0.5,
-            vy: (Math.random() - 0.5) * 0.5,
-            radius: Math.random() * 2 + 1
-          });
-        }
-
-        function animate() {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          for (let p of particles) {
-            p.x += p.vx;
-            p.y += p.vy;
-
-            if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-            if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-            ctx.fillStyle = "rgba(173,216,230,0.6)";
-            ctx.fill();
-          }
-
-          requestAnimationFrame(animate);
-        }
-
-        animate();
-        window.addEventListener("resize", () => {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-        });
-      });
-    </script>
-    <style>
-      #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        background-size: cover;
-        background-position: 50% 50%;
-        z-index: -1;
-      }
-    </style>
-    <script>
-      particlesJS("particles-js", {
-        "particles": {
-          "number": {
-            "value": 80,
-            "density": { "enable": true, "value_area": 800 }
-          },
-          "color": { "value": "#000000" },
-          "shape": {
-            "type": "circle",
-            "stroke": { "width": 0, "color": "#000000" },
-          },
-          "opacity": {
-            "value": 0.5,
-            "random": false
-          },
-          "size": {
-            "value": 3,
-            "random": true
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#000000",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 4,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out"
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": { "enable": true, "mode": "grab" },
-            "onclick": { "enable": true, "mode": "push" },
-            "resize": true
-          },
-          "modes": {
-            "grab": { "distance": 200, "line_linked": { "opacity": 1 } },
-            "push": { "particles_nb": 4 }
-          }
-        },
-        "retina_detect": true
-      });
-    </script>
+    
   </head>
   <body>
-    <div id="particles-js"></div>
     <!-- NAVBAR -->
     <div class="content">
       <div class="navbar">
@@ -520,7 +408,6 @@
           </div>
         </footer>
       </div>
-    </div>
   </body>
 </html>
 

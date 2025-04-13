@@ -226,25 +226,5 @@ body {
   }
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
 
-#particles-js {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: transparent;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-}
 
