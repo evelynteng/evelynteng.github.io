@@ -2,17 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
-    <!--
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-    -->
     <link rel="icon" href="./assets/icons/creative-thinking-icon.png" />
     <title>Evelyn Teng's Page</title>
     <meta name="description" content="">
@@ -28,7 +17,6 @@
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Evelyn Teng's Page</span>
       </a>
       <a class="button" href="mailto:evelynqyteng@gmail.com">
@@ -38,29 +26,22 @@
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
           <img src="./assets/images/profile picture.png" class="portfolio-header-image">
         </div>
 
-        <!--
-          TODO
-
-          - Change the main-title to whatever you want
-          - Change the body-text after that to a quick introduction to what you do
-          - Edit the button text if you feel like it. It will link to the projects section below.
-        -->
         <div id="portfolio-header-text-container">
           <div class="header-text">
             <span class="main-title">Hi, I'm Evelyn!</span>
           </div>
-          <div class="body-text">I’m a high school student in Malaysia with a huge passion for neurotech, looking
-           to make healthcare and quality of life more accessible for all. My goal is to always be out there looking for ways 
-           to solve the world's biggest and toughest problems. I'm mainly skilled in Python and AI, but am also working on building 
-           with OpenBCI. For more information, 
-            feel free to contact me!</div>
+          <div class="body-text">
+            I’m a high school student in Malaysia with a huge passion for neurotech, looking
+            to make healthcare and quality of life more accessible for all. My goal is to always be out there looking for ways 
+            to solve the world's biggest and toughest problems. I'm mainly skilled in Python and AI, but am also working on building 
+            with OpenBCI. For more information, feel free to contact me!
+          </div>
           <a class="button" href="./about.html">
             <span class="about-text">About</span>
             <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
@@ -68,40 +49,12 @@
         </div>
       </div>
 
-     
-
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheaderfortitle-text" style="background-color: lightblue;">My Projects</span>
-        <p>The tangible outcomes and deliverables.</p>
-        <br>
+        <span class="subheaderfortitle-text" style="background-color: lightblue;">Projects</span>
         <div class="projects-container">
-        
-          <!--
-            TODO
 
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-              </a>
-            </div>
-
-            - To add a project to this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the HTML filename for the project (must be in the project-pages folder)
-
-          -->
-          
+          <!-- Project Cards -->
           <div class="project-card">
             <img src="./assets/images/tks/replicate2cover.png" class="project-image">
             <div class="project-card-text-container">
@@ -154,7 +107,6 @@
             </a>
           </div>
 
-
           <div class="project-card">
             <img src="./assets/images/ideathon24/iyna.png" class="project-image">
             <div class="project-card-text-container">
@@ -173,9 +125,7 @@
             <div class="project-card-text-container">
               <div class="subheader-text project-title">STEM Debate Competition 2024</div>
               <div class="date-text project-card-text">February 24, 2024</div>
-              <div class="body-text project-card-text">An event I led and planned that my school's Science
-                Society hosted.
-              </div>
+              <div class="body-text project-card-text">An event I led and planned that my school's Science Society hosted.</div>
             </div>
             <a class="button" href="./project-pages/debate.html">
               <span class="button-text">Read More</span>
@@ -195,7 +145,6 @@
               <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
             </a>
           </div>
-
 
           <div class="project-card">
             <img src="./assets/images/gbtc2023/gbtc-logo.png" class="project-image">
@@ -223,188 +172,24 @@
             </a>
           </div>
 
+          <!-- Continue your final project card here -->
+          <!-- Example:
           <div class="project-card">
             <img src="./assets/images/blender/blobfamily.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Blender Projects</div>
-              <div class="body-text project-card-text">Some small projects that I've made in the last couple of months.</div>
+              <div class="subheader-text project-title">Blender Project</div>
+              <div class="date-text project-card-text">[DATE]</div>
+              <div class="body-text project-card-text">[DESCRIPTION]</div>
             </div>
-            <a class="button" href="./project-pages/blender.html">
+            <a class="button" href="./project-pages/[PAGE].html">
               <span class="button-text">Read More</span>
               <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
             </a>
           </div>
+          -->
+
         </div>
       </div>
-
-
-      <!-- BLOG POSTS -->
-      <div id="my-work-section">
-        
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheaderfortitle-text" style="background-color: rgb(236, 236, 142);">Posts</span>
-        <p>The insights from experiences and events.</p>
-        <br>
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="./assets/images/ibro2024/cover.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Symposium - Cerebral Organoids @ UPM</div>
-              <div class="body-text project-card-text">August 12, 2024</div>
-            </div>
-            <a class="button" href="./post-pages/ibro2024.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/upm2024/upmlogo.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Universiti Putra Malaysia Internship 2024</div>
-              <div class="body-text project-card-text">August 10, 2024</div>
-            </div>
-            <a class="button" href="./post-pages/upm2024.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/flc2023/fobisia-logo.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">FOBISIA Leadership Conference 2023</div>
-              <div class="body-text project-card-text">November 5, 2023</div>
-            </div>
-            <a class="button" href="./post-pages/flc2023.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/uon2023/uon2023.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">University of Nottingham Summer Work Placement 2023</div>
-              <div class="body-text project-card-text">July 30, 2023</div>
-            </div>
-            <a class="button" href="./post-pages/uon2023.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/wsc2023/regionalroundseal.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">World Scholar's Cup 2023</div>
-              <div class="body-text project-card-text">June 12, 2023</div>
-            </div>
-            <a class="button" href="./post-pages/wsc2023.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/founders2023/founderscover.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Founder's Week 2023</div>
-              <div class="body-text project-card-text">May 20, 2023</div>
-            </div>
-            <a class="button" href="./post-pages/founders2023.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="my-work-section">
-        
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheaderfortitle-text" style="background-color: rgb(170, 215, 170);">Thoughts and Musings...</span>
-        <p>The personal ideas and perspectives.</p>
-        <br>
-        <!--
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Fallacies and Biases 101</div>
-              <div class="body-text project-card-text">October 20, 2024</div>
-            </div>
-            <a class="button" href="./thought-pages/fallacies.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-        </div> -->
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="./assets/images/longevity.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">A Look at the Future of (Im)Mortality: An Essay</div>
-              <div class="body-text project-card-text">February 6, 2025</div>
-            </div>
-            <a class="button" href="https://medium.com/@evelynqyteng/a-look-at-the-future-of-im-mortality-an-essay-90020fb36dc0?source=user_profile_page---------1-------------86a9edfd1309----------------------" target="_blank">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/synbio/protein.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Modelling Proteins with AlphaFold</div>
-              <div class="body-text project-card-text">December 27, 2024</div>
-            </div>
-            <a class="button" href="./thought-pages/synbio.html">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/tks/learnarticlepng.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Neuroprosthetics: The Future of Brain-Computer Interfaces</div>
-              <div class="body-text project-card-text">October 25, 2024</div>
-            </div>
-            <a class="button" href="https://medium.com/@evelynqyteng/neuroprosthetics-the-future-of-brain-computer-interfaces-and-regenerative-medicine-acc011cc8859" target="_blank">
-              <span class="button-text">Read More</span>
-              <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon" alt="Right Arrow">
-            </a>
-          </div>
-        </div>
-      <br>
-      <br>
-      <footer>
-        <div style="text-align: center;">
-          <h2>Contact Me</h2>
-        </div>
-        <div class="footer-container">
-          <a class="button" href="mailto:evelynqyteng@gmail.com">
-            <img src="./assets/icons/emailicon.png"
-              width="40" 
-              height="40"
-            >
-          </a>
-          <a class="button" href="https://linkedin.com/in/evelyn-teng" target="_blank">
-            <img src="./assets/icons/linkedinicon.png"
-              width="40"
-              heigh="40"  
-            >
-          </a>
-          <a class="button" href="https://medium.com/@evelynqyteng" target="_blank">
-            <img src="./assets/icons/mediumicon.png"
-              width="40"
-              heigh="40"
-            >
-          </a>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
